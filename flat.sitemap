@@ -21,3 +21,12 @@ Frame label="Quick Tools.." {
 Switch item=Lights mappings=[OFF="ALL ON"]  label="All Lights"   icon="light"
 
 }
+
+
+Frame label="Goldstone" {
+
+
+Switch item= Plug_spareroom  label="Spare Room"   icon="light"
+Switch item= Plug_myroom  label="My Room"   icon="light"
+
+}
