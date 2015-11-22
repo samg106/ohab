@@ -1,0 +1,69 @@
+Group All
+
+Group gMain
+
+Group gBedMaster
+
+Group gBedSpare
+
+Group gBathroom
+
+Group gGeneral
+
+
+Group GM_Living "Living Room" <video>  (gMain)
+
+Group GM_Kitchen "Kitchen" <kitchen>  (gMain)
+
+Group GM_Hallway "Hallway" <house> (gMain)
+
+
+
+/* active groups */
+
+Group:Switch:OR(ON, OFF) Lights "All Lights [(%d)]"
+
+
+
+/* Lights */
+
+Switch Light_gBedMaster_Ceiling  "Ceiling" (gBedMaster, Lights)
+
+Switch Light_gBedSpare_Ceiling     "Ceiling" (gBedSpare, Lights)
+
+Switch Light_gBathroom_Ceiling     "Ceiling" (gBathroom, Lights)
+
+Switch Light_gBathroom_Feature    "Feature" (gBathroom, Lights)
+
+Switch Light_GM_Living_Ceiling1     "Ceiling 1" (GM_Living, Lights)
+
+Switch Light_GM_Living_Ceiling2     "Ceiling 2" (GM_Living, Lights)
+
+Switch Light_GM_Kitchen_Ceiling  "Ceiling" (GM_Kitchen, Lights)
+
+Switch Light_GM_Hallway_Ceiling  "Ceiling" (GM_Hallway, Lights)
+
+
+
+
+
+
+/* Plug Outlets */
+
+Switch  Plug_GM_Kitchen_counter "PlugA" (GM_Kitchen, Lights)   { lightwaverf="room=1,device=1,type=SWITCH" }
+
+Switch  Plug_gBedMaster_wall "Wall Plug" <socket> (gBedMaster)
+Switch  Plug_GM_Living_wall "Wall Plug" <socket> (GM_Living)
+
+
+
+
+/* Shutters */
+
+Rollershutter ShutterBedroom "Blinds"  (gBedMaster)  { rfxcom=">1.0.0.1:RFY.RFY:Shutter" }
+
+
+
+
+
+
