@@ -45,6 +45,12 @@ Switch Light_GM_Hallway_Ceiling  "Ceiling" (GM_Hallway, Lights)
 
 
 
+/* Heating */
+Number RadiatorCTemp "Radiator [%.1f C]" (gBedMaster) { lightwaverf="room=4,serial=BF3B01,type=HEATING_CURRENT_TEMP,poll=1800" }
+Number RadiatorSTemp "Radiator Set Temp [%.1f C]" (gBedMaster) { lightwaverf="room=4,serial=BF3B01,type=HEATING_SET_TEMP" }
+Number RadiatorBatt "Radiator Battery [%.2f]"   (gBedMaster)  { lightwaverf="room=4,serial=BF3B01,type=HEATING_BATTERY" }
+String RadiatorMode "Radiator [%s]"   (gBedMaster)  { lightwaverf="room=4,serial=BF3B01,type=HEATING_MODE" }
+DateTime RadiatorUpdated "Radiator Updated [%1$tT, %1$tF]" (gBedMaster) { lightwaverf="room=4,serial=AF4A02,type=HEATING_UPDATETIME" }
 
 
 
