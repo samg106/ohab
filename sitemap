@@ -1,0 +1,23 @@
+sitemap flat label="Sam's Home Automation"
+
+{
+Frame label="General" {
+
+Group item=gMain label="Main Home" icon="house"
+
+Group item=gBedMaster label="Master Bedroom" icon="bedroom"
+
+Group item=gBedSpare label="Second Bedroom" icon="bedroom"
+
+Group item=gBathroom  label="Bathroom"   icon="bath"
+
+
+}
+
+
+Frame label="Quick Tools.." {
+
+
+Switch item=Lights mappings=[OFF="ALL ON"]  label="All Lights"   icon="light"
+
+}
