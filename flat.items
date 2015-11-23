@@ -10,6 +10,12 @@ Group gBathroom
 
 Group gGeneral
 
+Group gHeatingMaster "Heating" (gBedMaster)
+
+Group gHeatingSpare "Heating" (gBedSpare)
+
+Group gHeatingLiving "Heating" (gBedGeneral)
+
 
 Group GM_Living "Living Room" <video>  (gMain)
 
@@ -58,7 +64,8 @@ DateTime RadiatorUpdated "Radiator Updated [%1$tT, %1$tF]" (gBedMaster) { lightw
 
 Switch  Plug_GM_Kitchen_counter "PlugA" (GM_Kitchen, Lights)   { lightwaverf="room=1,device=1,type=SWITCH" }
 Switch  Plug_spareroom "Spare Room Lamp" (Lights)   { lightwaverf="room=1,device=1,type=SWITCH" }
-Switch  Plug_myroom "Cube Lamp" (Lights)   { lightwaverf="room=1,device=2,type=SWITCH" }
+Switch  Plug_myroom1 "Cube Lamp" (Lights)   { lightwaverf="room=1,device=2,type=SWITCH" }
+Switch  Plug_myroom2 "MR32" (Lights)   { lightwaverf="room=1,device=3,type=SWITCH" }
 
 Switch  Plug_gBedMaster_wall "Wall Plug" <socket> (gBedMaster)
 Switch  Plug_GM_Living_wall "Wall Plug" <socket> (GM_Living)
